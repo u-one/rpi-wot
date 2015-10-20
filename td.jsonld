@@ -1,0 +1,36 @@
+{
+    "@context" : {
+        "td" : "http://www.w3c.org/wot/td#",
+        "xsd" : "http://www.w3.org/2001/XMLSchema#"
+    },
+    "td:hasMetadata" : {
+        "td:name" : "Fan",
+        "td:protocols" : {
+            "td:http" : {
+                "td:uri" : "http://localhost:80/api/fan",
+                "td:priority" : 1
+            }
+        },
+        "td:encodings" : [
+            "td:JSON"
+        ]
+    },
+    "td:hasInteraction": [
+        {
+            "@type" : "td:Property",
+            "td:name" : "speed",
+            "td:hasOutput" : "xsd:unsignedShort",
+            "td:writeable" : true
+        },
+        {
+            "@type" : "td:Action",
+            "td:name" : "switchOnOff",
+            "td:hasInput" : "xsd:boolean",
+            "td:hasOutput" : ""
+        }
+    ],
+    "td:hasData" : [
+        {
+        }
+    ]
+}

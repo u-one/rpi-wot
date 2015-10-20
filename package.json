@@ -1,0 +1,16 @@
+{
+  "name": "rpi_wot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "./bin/www"
+  },
+  "engine": {
+    "node": "v0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies":{
+    "express": "*",
+    "async": "*"
+  }
+}
