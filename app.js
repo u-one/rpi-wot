@@ -8,6 +8,12 @@ var server = http.createServer(app);
 app.use(express.static(__dirname + '/public'));
 routes.configRoutes(app, server);
 
-server.listen(process.env.PORT || 8080);
+server.on('error', function(e) {
+  console.log(e);
+});
 
-console.log('listening on port %d', server.address().port);
+server.listen(process.env.PORT || 80);
+
+if (server.address()) {
+  console.log('listening on port %d', server.address().port);
+}

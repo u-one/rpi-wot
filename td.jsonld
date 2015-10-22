@@ -7,7 +7,7 @@
         "td:name" : "Fan",
         "td:protocols" : {
             "td:http" : {
-                "td:uri" : "http://localhost:80/api/fan",
+                "td:uri" : "http://pithing.mydns.jp/api/fan",
                 "td:priority" : 1
             }
         },
